@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a32f35b0a2.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/Favicon.jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>Interview Test</title>
+</head>
+<body>
+    <div class="user">
+        <img src="assets/Profile.png" alt="user-image">
+    </div>
+    <!--Form section HTML-->
+    <section id="form">
+        <div class="form-area">
+            <form action="#" style="max-width:500px;margin:auto">
+                <div class="input-container">
+                  <i class="fa fa-user icon"></i>
+                  <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                </div>  
+                <div class="input-container">
+                  <i class="fa fa-key icon"></i>
+                  <input class="input-field" type="password" placeholder="Password" name="psw">
+                </div>
+                <button type="submit" class="btn" onclick="togglePopup()">Register</button>
+              </form>
+        </div>
+            <!-- div containing the popup -->
+    <div class="content">
+        <div onclick="togglePopup()" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2>Successfully Login</h2>
+        <p>
+            You can continue to your work dashboard
+        </p>
+    </div>
+    </section>
+    <script type="text/javascript">
+        // Function to show and hide the popup
+        function togglePopup() {
+            $(".content").toggle();
+        }
+    </script>
+
+</body>
+</html>
